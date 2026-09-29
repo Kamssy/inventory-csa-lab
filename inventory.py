@@ -1,8 +1,16 @@
-"""Inventory data: a list of items with name, quantity and price."""
+from dataclasses import dataclass
+@dataclass
+class Item:
+    """One inventory item."""
 
-inventory = [
-    {"item_name": "Notebook", "quantity": 50, "price": 500},
-    {"item_name": "Pen", "quantity": 200, "price": 100},
-    {"item_name": "Stapler", "quantity": 15, "price": 1200},
-    {"item_name": "Marker", "quantity": 0, "price": 350},
+    item_name: str
+    quantity: int
+    price: float
+
+
+inventory: list[Item] = [
+    Item("Notebook", 50, 500),
+    Item("Pen", 200, 100),
+    Item("Stapler", 15, 1200),
+    Item("Marker", 0, 350),
 ]
