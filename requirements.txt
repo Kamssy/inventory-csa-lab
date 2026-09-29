@@ -1,1 +1,2 @@
 # No third-party dependencies yet
+# Requires Python 3.12 or newer
