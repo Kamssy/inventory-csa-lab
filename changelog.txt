@@ -1,0 +1,6 @@
+520df90 | Kamssy | 2026-09-29 | Merge dev: complete maintenance tasks
+fb6206a | Kamssy | 2026-09-29 | refactor: move calculations to helpers, add docstrings and empty guard (preventive)
+650f42d | Kamssy | 2026-09-29 | feat: add formatted report table with low-stock warning (perfective)
+68443ff | Kamssy | 2026-09-29 | feat: add Item dataclass and Python 3.12 type hints (adaptive)
+01df20b | Kamssy | 2026-09-28 | fix: calculate stock value as quantity x price (corrective)
+9c78696 | Kamssy | 2026-09-28 | Initial commit: inventory project starter
