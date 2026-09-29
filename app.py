@@ -1,14 +1,8 @@
 from inventory import Item, inventory
-from utils.helpers import highest_stock_item, lowest_stock_item
+from utils.helpers import highest_stock_item, lowest_stock_item, item_value, total_stock_value
 
+# Items with fewer units than this are flagged in the report
 LOW_STOCK_LIMIT = 20
-
-def total_stock_value(items: list[Item]) -> float:
-    total = 0
-    for item in items:
-        total += item.quantity * item.price
-    return total
-
 
 def print_report(items: list[Item]) -> None:
     """Print the inventory as an aligned table with a low-stock warning."""
